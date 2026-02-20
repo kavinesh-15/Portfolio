@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kavineshwaran | Robotics Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* GLOBAL */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+scroll-behavior:smooth;
+}
+
+body{
+background:#05070d;
+color:white;
+overflow-x:hidden;
+}
+
+/* PARTICLES */
+
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+z-index:-1;
+top:0;
+left:0;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(10px);
+z-index:10;
+}
+
+nav h2{
+color:#3b82f6;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-size:15px;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#3b82f6;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+flex-direction:column;
+padding:0 10%;
+}
+
+.hero h1{
+font-size:60px;
+color:#3b82f6;
+}
+
+.hero h2{
+margin-top:10px;
+font-weight:400;
+}
+
+.hero p{
+margin-top:20px;
+max-width:700px;
+opacity:0.8;
+}
+
+/* SECTION */
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:40px;
+color:#3b82f6;
+}
+
+/* ABOUT */
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#0d111a;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+border:1px solid rgba(255,255,255,0.05);
+}
+
+.skill:hover{
+transform:translateY(-5px);
+border:1px solid #3b82f6;
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:#0d111a;
+padding:25px;
+border-radius:12px;
+transition:0.4s;
+border:1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover{
+transform:translateY(-8px);
+border:1px solid #3b82f6;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+opacity:0.6;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.about{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<nav>
+<h2>KVP</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<h1>Kavineshwaran V P</h1>
+<h2>Robotics Engineer</h2>
+
+<p>
+Mechatronics Engineering undergraduate at Kumaraguru College of Technology
+passionate about robotics, AI systems, embedded development and innovative engineering solutions.
+</p>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+
+<p>
+
+I am a Mechatronics Engineering student with a strong interest in robotics engineering, intelligent systems and mechanical design.
+
+My academic journey with a CGPA of 8.07 has helped me build strong analytical thinking and practical engineering skills.
+
+I enjoy solving real world engineering challenges through automation, robotics and AI based systems.
+
+</p>
+
+<p>
+
+I actively work on projects involving embedded systems, ROS, robotics control and product design.
+
+I believe in continuous learning and collaboration, which helps me contribute effectively to innovative technical projects.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Python</div>
+<div class="skill">Embedded Systems</div>
+<div class="skill">IoT</div>
+<div class="skill">SolidWorks</div>
+<div class="skill">ROS</div>
+<div class="skill">Automation</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>Voice Controlled Engineering Graphics Kit</h3>
+<p>Voice based assistance system that guides engineering drawing tasks using speech recognition.</p>
+</div>
+
+<div class="card">
+<h3>Line Following Robot</h3>
+<p>Autonomous robot that detects and follows a path using sensor based feedback control.</p>
+</div>
+
+<div class="card">
+<h3>Self Balancing Robot</h3>
+<p>Two wheel robot that stabilizes itself using gyroscope sensor data and control algorithms.</p>
+</div>
+
+<div class="card">
+<h3>Vehicle Parking System</h3>
+<p>Smart parking prototype that detects available slots using sensors and automation logic.</p>
+</div>
+
+<div class="card">
+<h3>PLC Vending Machine</h3>
+<p>Industrial automation project that dispenses products using PLC programming.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="contact">
+
+<p>Email: vpkavineshwaran@gmail.com</p>
+<p>Phone: +91 9611288440</p>
+<p>LinkedIn: linkedin.com/in/kavineshwaran-v-p-9773892b8</p>
+<p>GitHub: github.com/kavinesh-vp</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Kavineshwaran V P
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<script>
+
+particlesJS("particles-js", {
+
+particles:{
+number:{value:80},
+
+color:{value:"#3b82f6"},
+
+shape:{type:"circle"},
+
+opacity:{value:0.5},
+
+size:{value:3},
+
+line_linked:{
+enable:true,
+distance:150,
+color:"#3b82f6",
+opacity:0.4,
+width:1
+},
+
+move:{
+enable:true,
+speed:2
+}
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
